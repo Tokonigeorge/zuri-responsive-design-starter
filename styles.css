@@ -10,6 +10,7 @@
 div.nav-bar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 6rem;
     width: 100vw;
     background: #304353;
@@ -344,4 +345,86 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media screen and (max-width: 800px){
+    div.background {
+        padding: 15px 40px 20px 40px;
+        width: 550px;
+        height: auto;
+        position: relative;
+    }
+
+    div.hero-background {
+        padding: 2rem;
+    }
+
+    div.background h4 {
+        padding: 1rem 0rem;
+    }
+    
+    div.background p {
+        padding-left: 0rem;
+    }
+
+    div.hero-background-pos {
+        left: 82%;
+        width: 7rem;
+        height: 7rem;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    div.nav-bar {
+        padding: 1rem 0.5rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    ul li + li{
+        margin-left: 0.7rem;
+    }
+
+     ul li:last-of-type{
+         padding-right: 0.5rem;
+     }  
+    
+    div.logo {
+        font-size: 1.3rem;
+    }
+
+    div.hero-section {
+        background: #304353;
+        padding: 2rem;
+    }
+
+    div.snapshot-box-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.footer {
+        background: #304353;
+        padding: 1rem;
+    }    
+    
+}
+
+@media screen and (max-width: 520px){
+    div.hero-background-pos {
+        left: 80%;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    div.hero-background {
+        padding: 1rem;
+    }
+
+    ul li + li{
+        margin-left: 0.5rem;
+    }
 }
